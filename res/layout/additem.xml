@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+	android:background="@drawable/bckground">
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add an Item to your&apos;s shopping list!"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/etNameOfItem"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name(Set the name of the item you need to buy)" />
+
+        <RadioGroup
+            android:id="@+id/rgPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/rbLevel3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Highly Important Need" />
+
+            <RadioButton
+                android:id="@+id/rbLevel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily Need" 
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/rbLevel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Less Important Need" />
+        </RadioGroup>
+
+        <requestFocus />
+
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Priority Level(How much important is that item?)" />
+
+        <Button
+            android:id="@+id/bAddIt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add it!" />
+
+        <Button
+            android:id="@+id/bCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cancel" />
+
+    </LinearLayout>
+
+</LinearLayout>
